@@ -1,0 +1,6 @@
+[Unit]
+Description=Deep System Daily Cleanup Service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/daily-cleanup.sh
