@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Skrip untuk mereload tampilan Serpentinum tanpa animasi (Start.qml)
+# dan menjalankannya di latar belakang.
+
+echo "Menghentikan Serpentinum yang sedang berjalan..."
+~/.local/bin/serpantinum kill
+pkill -TERM -x quickshell 2>/dev/null
+
+# Tunggu sampai benar-benar mati
+while pgrep -f "serpantinumd" > /dev/null; do sleep 0.1; done
+while pgrep -x quickshell > /dev/null; do sleep 0.1; done
+
+echo "Memulai ulang Serpentinum di latar belakang..."
+# Memastikan daemon berjalan sepenuhnya terpisah dari shell (mencegah SIGHUP)
+systemd-run --user --quiet --property=KillMode=process /home/avrlln/.local/bin/serpantinumd start
+
+echo "Serpentinum berhasil direload."

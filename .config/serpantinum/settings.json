@@ -1,0 +1,205 @@
+{
+  "general": {
+    "language": "id",
+    "avatarPath": "/home/avrlln/.face",
+    "muteSfx": false,
+    "weatherInterval": 15,
+    "weatherUnit": "metric",
+    "sfxVolume": 100,
+    "quickactions": true,
+    "location": {
+      "ip": "114.10.137.68",
+      "latitude": 1.16667,
+      "longitude": 108.96667,
+      "city": "Pemangkat",
+      "region": "West Kalimantan",
+      "region_code": "KB",
+      "country_name": "Indonesia",
+      "country_code": "ID",
+      "postal": null,
+      "timezone": "Asia/Pontianak",
+      "utc_offset": "+0700",
+      "currency": "IDR",
+      "languages": "id,en,nl,jv",
+      "asn": "AS4761",
+      "org": "PT. INDOSAT Tbk",
+      "source": "ipapi.co",
+      "updated_at": 1788650545
+    }
+  },
+  "syspanel": {
+    "clipExpandProgress": 0,
+    "clipExpanded": false,
+    "clipState": 1
+  },
+  "bar": {
+    "position": "top",
+    "width": 5,
+    "opacity": 100,
+    "style": "modular",
+    "time": {
+      "format": "HH:mm:ss"
+    },
+    "autohide": false,
+    "autohideTimeout": 1000,
+    "modules": {
+      "left": [
+        "left",
+        "workspaces",
+        "media",
+        "vis"
+      ],
+      "center": [
+        [
+          "timedate",
+          "info",
+          "weather"
+        ]
+      ],
+      "right": [
+        "sysmon",
+        "tray",
+        [
+          "kb",
+          "wifi",
+          "bt",
+          "vol",
+          "bat"
+        ]
+      ]
+    },
+    "workspaceCount": 5,
+    "groupColors": {
+      "g_timedate": "#d0d0d0",
+      "g_kb": "#e0e0e0"
+    },
+    "distinctPills": false
+  },
+  "theme": {
+    "fontFamily": "Adwaita Mono",
+    "borderRadius": 10,
+    "activePreset": "Obsidian",
+    "matugen": false,
+    "colors": {
+      "base": "#000000",
+      "blue": "#ffffff",
+      "crust": "#000000",
+      "green": "#ffffff",
+      "mantle": "#050505",
+      "maroon": "#808080",
+      "mauve": "#d0d0d0",
+      "overlay0": "#5a5a5a",
+      "overlay1": "#7a7a7a",
+      "overlay2": "#9a9a9a",
+      "peach": "#cccccc",
+      "pink": "#e0e0e0",
+      "red": "#a0a0a0",
+      "sapphire": "#e0e0e0",
+      "subtext0": "#a0a0a0",
+      "subtext1": "#c0c0c0",
+      "surface0": "#1a1a1a",
+      "surface1": "#2a2a2a",
+      "surface2": "#3a3a3a",
+      "teal": "#c0c0c0",
+      "text": "#ffffff",
+      "yellow": "#ffffff"
+    }
+  },
+  "idle": {
+    "enabled": true,
+    "actions": {
+      "dim": {
+        "id": "dim",
+        "timeout": 150,
+        "enabled": true,
+        "respectInhibitors": true,
+        "mprisInhibit": false,
+        "command": "",
+        "resumeCommand": "",
+        "isCustom": false
+      },
+      "dpms": {
+        "id": "dpms",
+        "timeout": 450,
+        "enabled": true,
+        "respectInhibitors": true,
+        "mprisInhibit": true,
+        "command": "",
+        "resumeCommand": "",
+        "isCustom": false
+      },
+      "lock": {
+        "id": "lock",
+        "timeout": 300,
+        "enabled": true,
+        "respectInhibitors": true,
+        "mprisInhibit": false,
+        "command": "",
+        "resumeCommand": "",
+        "isCustom": false
+      },
+      "suspend": {
+        "id": "suspend",
+        "timeout": 600,
+        "enabled": true,
+        "respectInhibitors": true,
+        "mprisInhibit": false,
+        "command": "",
+        "resumeCommand": "",
+        "isCustom": false
+      }
+    },
+    "manualInhibit": true
+  },
+  "notifications": {
+    "dnd": false,
+    "position": "top right",
+    "sound": true,
+    "soundFile": "/home/avrlln/.local/share/serpantinum/src/assets/sounds/notifications/Progress.wav",
+    "showEmptyGraphic": true
+  },
+  "display": {
+    "monitors": {
+      "eDP-1": {
+        "enabled": false,
+        "scale": 1
+      }
+    }
+  },
+  "desktopVisualiser": {
+    "enabled": true
+  },
+  "widgets": {
+    "hideBarInRedactor": true
+  },
+  "launcher": {
+    "position": "top",
+    "width": 600,
+    "itemCount": 6,
+    "terminalCommand": "kitty -e",
+    "smartRanking": true
+  },
+  "dock": {
+    "enabled": false,
+    "position": "bottom",
+    "elementSize": 44,
+    "floating": false,
+    "opacity": 100,
+    "autohide": false,
+    "autohideTimeout": 1000,
+    "editing": false,
+    "apps": [
+      {
+        "name": "Discord",
+        "comment": "All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.",
+        "desktop_id": "discord",
+        "icon": "discord"
+      }
+    ],
+    "overrideBoundsCorrection": false,
+    "enableScrolling": false,
+    "visibleElements": 7,
+    "hoverScale": 120,
+    "cascadeScale": false
+  }
+}
